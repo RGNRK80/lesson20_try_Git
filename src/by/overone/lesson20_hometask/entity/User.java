@@ -70,4 +70,15 @@ public class User {
     public void out (String name) {
         this.name=name+"1";
     }
+
+    @Override
+    public String toString() {
+        return "User [" +
+                "id= " + id +
+                ", name= " + name +
+                ", surname= " + surname +
+                ", age= " + age +
+                ", phoneNumber= " + phoneNumber  +
+                ']';
+    }
 }

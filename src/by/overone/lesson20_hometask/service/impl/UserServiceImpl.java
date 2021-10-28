@@ -15,7 +15,6 @@ public class UserServiceImpl implements UserService {
         return userRepository.getAllUsers();
     }
 
-
     @Override
     public User removeUserById(long id) {
         User[] users = getAllUsers();
@@ -54,6 +53,4 @@ public class UserServiceImpl implements UserService {
         userRepository.addUser(user);
         return user;
     }
-
-
 }
